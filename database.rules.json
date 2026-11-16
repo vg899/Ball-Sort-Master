@@ -1,0 +1,42 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+        "progress": {
+          ".validate": "newData.hasChildren(['currentLevel', 'highestCompletedLevel'])",
+          "currentLevel": {
+            ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 1000000"
+          },
+          "highestCompletedLevel": {
+            ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000000"
+          },
+          "totalCompleted": {
+            ".validate": "newData.isNumber()"
+          },
+          "lastPlayedAt": {
+            ".validate": "newData.isNumber()"
+          }
+        }
+      }
+    },
+    "prizeClaims": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        // Allow user to create or update their own claim if status is 'pending', but not edit administrative status
+        ".write": "auth != null && auth.uid === $uid && (!data.exists() || data.child('status').val() === 'pending')",
+        ".validate": "newData.hasChildren(['name', 'email', 'mobile', 'address', 'pinCode', 'completedLevel', 'verificationHash', 'status'])",
+        "status": {
+          ".validate": "newData.val() === 'pending' || (data.exists() && data.val() === newData.val())"
+        },
+        "completedLevel": {
+          ".validate": "newData.val() === 1000000"
+        },
+        "verificationHash": {
+          ".validate": "newData.isString() && newData.val().length === 64"
+        }
+      }
+    }
+  }
+}

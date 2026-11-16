@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Tube 1 (Left) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#15FFFFFF"
+        android:pathData="M 33,36 L 33,74 A 8,8 0 0,0 49,74 L 49,36" />
+    <!-- Tube 1 Rim -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M 30,36 L 52,36" />
+
+    <!-- Tube 2 (Right) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#15FFFFFF"
+        android:pathData="M 59,36 L 59,74 A 8,8 0 0,0 75,74 L 75,36" />
+    <!-- Tube 2 Rim -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M 56,36 L 78,36" />
+
+    <!-- Tube 1 - Bottom Ball (Red) -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M 41,74 m -6,0 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0" />
+    <!-- Tube 1 - Bottom Ball Highlight -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 39,72 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0" />
+
+    <!-- Tube 1 - Middle Ball (Yellow Amber) -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M 41,61 m -6,0 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 39,59 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0" />
+
+    <!-- Tube 1 - Top Ball (Emerald Green) -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M 41,48 m -6,0 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 39,46 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0" />
+
+    <!-- Tube 2 - Bottom Ball (Purple Violet) -->
+    <path
+        android:fillColor="#8B5CF6"
+        android:pathData="M 67,74 m -6,0 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 65,72 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0" />
+
+    <!-- Tube 2 - Middle Ball (Cyan) -->
+    <path
+        android:fillColor="#06B6D4"
+        android:pathData="M 67,61 m -6,0 a 6,6 0 1,0 12,0 a 6,6 0 1,0 -12,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 65,59 m -1.5,0 a 1.5,1.5 0 1,0 3,0 a 1.5,1.5 0 1,0 -3,0" />
+
+    <!-- Lifted / Animated Ball (Hovering above tube 2 ready to drop) -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M 54,23 m -6.5,0 a 6.5,6.5 0 1,0 13,0 a 6.5,6.5 0 1,0 -13,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 52,21 m -1.8,0 a 1.8,1.8 0 1,0 3.6,0 a 1.8,1.8 0 1,0 -3.6,0" />
+
+    <!-- Glow / sparkle around the lifted ball -->
+    <path
+        android:strokeColor="#FCD34D"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M 65,16 L 68,16 M 66.5,14.5 L 66.5,17.5" />
+</vector>

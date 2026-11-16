@@ -1,0 +1,6 @@
+{
+  "name": "Ball Sort Master",
+  "description": "Color-ball sorting puzzle game with 1,000,000 deterministic levels, Grand Prize challenge, Firebase Realtime Database and AdMob support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
